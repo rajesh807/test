@@ -1,0 +1,6 @@
+mock
+pytest
+pyhamcrest
+https://github.com/wazo-platform/wazo-test-helpers/archive/master.zip
+# for http tests that use stevedore plugins
+-e .

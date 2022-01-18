@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+export PYBUILD_NAME=wazo-auth
+export PYBUILD_DISABLE=test
+
+%:
+	dh $@ --with python3,systemd --buildsystem=pybuild
+
+override_dh_installinit:
+	dh_installinit --noscripts
